@@ -3,7 +3,7 @@ from discord.ext import commands
 
 bot = commands.Bot("?")
 
-@asyncio.coroutine
+@bot.event
 async def on_ready():
     print("bot online")
 
@@ -20,4 +20,3 @@ async def hello(ctx):
 
 
 bot.run("BOT_TOKEN")
-
